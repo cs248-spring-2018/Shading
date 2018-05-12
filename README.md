@@ -1,6 +1,6 @@
 # Stanford CS248 Assignment 3: Real-Time Shader Programming
 
-The repository is located at https://github.com/cs248-spring-2018/shading.
+The repository is located at https://github.com/cs248-spring-2018/Shading.
 
 ## Due date
 
