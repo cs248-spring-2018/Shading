@@ -1,0 +1,360 @@
+newmtl SportsCar_Poly_Phong:BodyMat_White1SG
+illum 4
+Kd 0.04 0.04 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl SportsCar_Poly_Phong:EngineSilver3SG
+illum 4
+Kd 0.35 0.35 0.35
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl SportsCar_Poly_Phong:GoldMatSG
+illum 4
+Kd 0.53 0.45 0.24
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl SportsCar_Poly_Phong:HeadLightBK_MatSG
+illum 4
+Kd 0.04 0.04 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 49.44
+newmtl SportsCar_Poly_Phong:Interior_GomBlackqSG
+illum 4
+Kd 0.08 0.08 0.08
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 63.00
+newmtl SportsCar_Poly_Phong:Interior_RedSG
+illum 4
+Kd 0.63 0.13 0.12
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00
+newmtl SportsCar_Poly_Phong:Interior_WhiteSG
+illum 4
+Kd 0.91 0.91 0.91
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 74.76
+newmtl SportsCar_Poly_Phong:LightReflecMat1SG
+illum 4
+Kd 0.34 0.34 0.34
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 117.26
+newmtl SportsCar_Poly_Phong:SusArm_Silver3SG
+illum 4
+Kd 0.13 0.13 0.13
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl SportsCar_Poly_Phong:Wheel2Mat1SG
+illum 4
+Kd 0.31 0.31 0.31
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl SportsCar_Poly_Phong:WindowGlassMatSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.03 0.03 0.03
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00
+newmtl SportsCar_Poly_Phong:WinkerCover_MatSG
+illum 4
+Kd 0.82 0.31 0.00
+Ka 0.00 0.00 0.00
+Tf 0.39 0.67 0.85
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00
+newmtl SportsCar_Poly_Phong:_mi_car_paint_phen_x1SG
+illum 4
+Kd 0.82 0.82 0.82
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl SportsCar_Poly_Phong:mi_car_paint_phen_x2SG
+illum 4
+Kd 0.40 0.40 0.40
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl SportsCar_Poly_Phong:mi_car_paint_phen_x3SG
+illum 4
+Kd 0.15 0.15 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl SportsCar_Poly_Phong:mia_material_x1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.00 0.00 0.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00
+newmtl SportsCar_Poly_Phong:mia_material_x2SG
+illum 4
+Kd 0.48 0.48 0.48
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 137.15
+newmtl SportsCar_Poly_Phong:mia_material_x4SG
+illum 4
+Kd 0.08 0.08 0.08
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 144.38
+newmtl SportsCar_Poly_Phong:mia_material_x6SG
+illum 4
+Kd 0.05 0.05 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 59.38
+newmtl SportsCar_Poly_Phong:mia_material_x7SG
+illum 4
+Kd 0.68 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.22 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 140.77
+newmtl SportsCar_Poly_Phong:mia_material_x8SG
+illum 4
+Kd 1.00 0.38 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00
+newmtl SportsCar_Poly_Phong:mia_material_x9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00
+newmtl SportsCar_Poly_Phong:mia_material_x10SG
+illum 4
+Kd 0.39 0.69 0.39
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 128.11
+newmtl SportsCar_Poly_Phong:mia_material_x11SG
+illum 4
+Kd 0.11 0.11 0.11
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00
+newmtl SportsCar_Poly_Phong:mia_material_x12SG
+illum 4
+Kd 0.04 0.04 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 133.53
+newmtl SportsCar_Poly_Phong:mia_material_x16SG
+illum 4
+Kd 0.73 0.11 0.11
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 119.06
+newmtl SportsCar_Poly_Phong:mia_material_x17SG
+illum 4
+Kd 0.12 0.12 0.12
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 105.50
+newmtl SportsCar_Poly_Phong:mia_material_x18SG
+illum 4
+Kd 0.10 0.10 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 145.29
+newmtl SportsCar_Poly_Phong:mia_material_x19SG
+illum 4
+Kd 0.67 0.05 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 141.67
+newmtl SportsCar_Poly_Phong:mia_material_x21SG
+illum 4
+Kd 0.03 0.03 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00
+newmtl SportsCar_Poly_Phong:mia_material_x22SG
+illum 4
+Kd 0.26 0.26 0.23
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 90.13
+newmtl SportsCar_Poly_Phong:mia_material_x23SG
+illum 4
+Kd 0.41 0.05 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 145.29
+newmtl SportsCar_Poly_Phong:mia_material_x24SG
+illum 4
+Kd 0.06 0.06 0.06
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 142.57
+newmtl SportsCar_Poly_Phong:mia_material_x25SG
+illum 4
+Kd 0.03 0.03 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 110.02
+newmtl SportsCar_Poly_Phong:mia_material_x26SG
+illum 4
+Kd 0.33 0.21 0.13
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 29.54
+newmtl SportsCar_Poly_Phong:mia_material_x27SG
+illum 4
+Kd 0.09 0.09 0.09
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 59.38
+newmtl SportsCar_Poly_Phong:mia_material_x28SG
+illum 4
+Kd 0.55 0.55 0.55
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 116.35
+newmtl SportsCar_Poly_Phong:mia_material_x29SG
+illum 4
+Kd 0.16 0.18 0.16
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00
+newmtl SportsCar_Poly_Phong:mia_material_x31SG
+illum 4
+Kd 0.04 0.04 0.04
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 64.81
+newmtl SportsCar_Poly_Phong:mia_material_x32SG
+illum 4
+Kd 0.47 0.12 0.12
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00
+newmtl SportsCar_Poly_Phong:mia_material_x33SG
+illum 4
+Kd 1.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00
+newmtl SportsCar_Poly_Phong:mia_material_x34SG
+illum 4
+Kd 0.11 0.11 0.11
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00
+newmtl SportsCar_Poly_Phong:mia_material_x35SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.03 0.03 0.03
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00
+newmtl SportsCar_Poly_Phong:mia_material_x36SG
+illum 4
+Kd 0.62 0.62 0.62
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00
+newmtl SportsCar_Poly_Phong:mia_material_x37SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 148.00

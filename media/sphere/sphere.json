@@ -1,0 +1,38 @@
+{
+	"camera" :
+	{
+		"id" : "Camera_001-camera",
+		"name" : "Camera.002",
+		"xfov" : 50,
+		"yfov" : 35,
+		"znear" : 0.1,
+		"zfar" : 10000.0,
+		"aspect_ratio" : 1.777778,
+		"up_axis" : "Y_UP",
+		"target_position" : [0.563858,1.59684,1.898],
+		"dir2cam" : [49.2665,3.22011,-65.5279]
+	},
+    "lights" :
+	[
+		{
+			"id" : "Directional-light",
+			"name" : "Directional",
+			"type" : "directional",
+			"direction" : [0, -1, 1]
+		}
+	]
+	,
+    "meshes" :
+	[
+		{
+			"filename" : "sphere.obj",
+			"diffuse_filename" : "color_map.png",
+			"normal_filename" : "normal_map.png",
+			"texcoord_v_flip" : "true",
+            "texcoord_u_scale" : 1,
+            "texcoord_v_scale" : 1,
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag"
+		}
+	]
+}

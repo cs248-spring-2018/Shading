@@ -1,0 +1,301 @@
+{
+	"camera" :
+	{
+		"id" : "Camera_001-camera",
+		"name" : "Camera.002",
+		"xfov" : 50,
+		"yfov" : 35,
+		"znear" : 0.1,
+		"zfar" : 10000.0,
+		"aspect_ratio" : 1.777778,
+		"up_axis" : "Y_UP",
+		"target_position" : [-519.011,72.7043,92.4038],
+		"dir2cam" : [-118.739,134.356,-396.092]
+	},
+    "lights" :
+	[
+		{
+			"id" : "Directional-light",
+			"name" : "Directional",
+			"type" : "directional",
+			"direction" : [0, -1, 1]
+		}
+	]
+	,
+    "meshes" :
+	[
+		{
+			"filename" : "mesh/vespa_backlight.obj",
+			"diffuse_filename" : "image/Vespa_0_BaseColor_Rusty.png",
+            "normal_filename" : "image/Vespa_0_Normal_Rusty.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true"
+		},
+		{
+			"filename" : "mesh/vespa_black_parts.obj",
+			"diffuse_filename" : "image/Vespa_0_BaseColor_Rusty.png",
+            "normal_filename" : "image/Vespa_0_Normal_Rusty.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true"
+		},
+		{
+			"filename" : "mesh/vespa_body.obj",
+			"diffuse_filename" : "image/Vespa_0_BaseColor_Rusty.png",
+            "normal_filename" : "image/Vespa_0_Normal_Rusty.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true",
+			"parameters" :
+			[
+				{
+					"name" : "metallic",
+					"value" : 0.0
+				},
+				{
+					"name" : "subsurface",
+					"value" : 1.0
+				},
+				{
+					"name" : "specular",
+					"value" : 0.5
+				},
+				{
+					"name" : "roughness",
+					"value" : 0.5
+				},
+				{
+					"name" : "specularTint",
+					"value" : 0.0
+				},
+				{
+					"name" : "anisotropic",
+					"value" : 0.0
+				},
+				{
+					"name" : "sheen",
+					"value" : 0.0
+				},
+				{
+					"name" : "sheenTint",
+					"value" : 0.5
+				},
+				{
+					"name" : "clearcoat",
+					"value" : 0.0
+				},
+				{
+					"name" : "clearcoatGloss",
+					"value" : 1.0
+				}
+			]
+		},
+		{
+			"filename" : "mesh/vespa_engine.obj",
+			"diffuse_filename" : "image/Vespa_0_BaseColor_Rusty.png",
+            "normal_filename" : "image/Vespa_0_Normal_Rusty.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true"
+		},
+		{
+			"filename" : "mesh/vespa_handles.obj",
+			"diffuse_filename" : "image/Vespa_0_BaseColor_Rusty.png",
+            "normal_filename" : "image/Vespa_0_Normal_Rusty.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true"
+		},
+		{
+			"filename" : "mesh/vespa_headlight.obj",
+			"diffuse_filename" : "image/Vespa_Headlight_0_BaseColor.png",
+            "normal_filename" : "image/Vespa_Headlight_0_Normal.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true",
+			"parameters" :
+			[
+				{
+					"name" : "metallic",
+					"value" : 0.0
+				},
+				{
+					"name" : "subsurface",
+					"value" : 0.0
+				},
+				{
+					"name" : "specular",
+					"value" : 0.5
+				},
+				{
+					"name" : "roughness",
+					"value" : 0.0
+				},
+				{
+					"name" : "specularTint",
+					"value" : 0.0
+				},
+				{
+					"name" : "anisotropic",
+					"value" : 0.0
+				},
+				{
+					"name" : "sheen",
+					"value" : 0.0
+				},
+				{
+					"name" : "sheenTint",
+					"value" : 0.5
+				},
+				{
+					"name" : "clearcoat",
+					"value" : 0.0
+				},
+				{
+					"name" : "clearcoatGloss",
+					"value" : 1.0
+				}
+			]
+		},
+		{
+			"filename" : "mesh/vespa_license_plate.obj",
+			"diffuse_filename" : "image/Vespa_0_BaseColor_Rusty.png",
+            "normal_filename" : "image/Vespa_0_Normal_Rusty.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true"
+		},
+		{
+			"filename" : "mesh/vespa_metal_parts.obj",
+			"diffuse_filename" : "image/Vespa_0_BaseColor_Rusty.png",
+            "normal_filename" : "image/Vespa_0_Normal_Rusty.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true",
+			"parameters" :
+			[
+				{
+					"name" : "metallic",
+					"value" : 0.5
+				},
+				{
+					"name" : "subsurface",
+					"value" : 0.0
+				},
+				{
+					"name" : "specular",
+					"value" : 0.5
+				},
+				{
+					"name" : "roughness",
+					"value" : 0.0
+				},
+				{
+					"name" : "specularTint",
+					"value" : 0.0
+				},
+				{
+					"name" : "anisotropic",
+					"value" : 0.0
+				},
+				{
+					"name" : "sheen",
+					"value" : 0.0
+				},
+				{
+					"name" : "sheenTint",
+					"value" : 0.5
+				},
+				{
+					"name" : "clearcoat",
+					"value" : 0.0
+				},
+				{
+					"name" : "clearcoatGloss",
+					"value" : 1.0
+				}
+			]
+		},
+		{
+			"filename" : "mesh/vespa_odometer.obj",
+			"diffuse_filename" : "image/Vespa_Odometer_0_BaseColor.png",
+            "normal_filename" : "image/Vespa_Odometer_0_Normal.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true"
+		},
+		{
+			"filename" : "mesh/vespa_odometer_glass.obj",
+			"diffuse_filename" : "image/Vespa_Odometer_Glass_0_BaseColor.png",
+            "normal_filename" : "image/Vespa_Odometer_Glass_0_Normal.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true"
+		},
+		{
+			"filename" : "mesh/vespa_seat.obj",
+			"diffuse_filename" : "image/Vespa_0_BaseColor_Rusty.png",
+            "normal_filename" : "image/Vespa_0_Normal_Rusty.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true"
+		},
+		{
+			"filename" : "mesh/vespa_tires.obj",
+			"diffuse_filename" : "image/Vespa_0_BaseColor_Rusty.png",
+            "normal_filename" : "image/Vespa_0_Normal_Rusty.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true"
+		},
+		{
+			"filename" : "mesh/vespa_stanford.obj",
+			"diffuse_filename" : "image/Vespa_Stanford.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true"
+		},
+		{
+			"filename" : "mesh/menu.obj",
+			"diffuse_filename" : "image/MenuSign_01_0_BaseColor.png",
+            "normal_filename" : "image/MenuSign_01_0_Normal.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true"
+		},
+		{
+			"filename" : "mesh/tables_and_chairs.obj",
+			"diffuse_filename" : "image/Paris_Table_03_0_BaseColor.png",
+            "normal_filename" : "image/Paris_Table_03_0_Normal.png",
+            "texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true"
+		},
+		{
+			"filename" : "mesh/ground.obj",
+			"diffuse_filename" : "image/Pavement_Cobblestone_02_0_BaseColor.png",
+            "normal_filename" : "image/Pavement_Cobblestone_02_0_Normal.png",
+            "texcoord_u_scale" : 4,
+            "texcoord_v_scale" : 4,
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag",
+            "use_disney" : "true"
+		}
+	]
+}

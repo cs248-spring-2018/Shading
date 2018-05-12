@@ -1,0 +1,103 @@
+{
+	"pattern" :
+	[
+        {
+            "name" : "layer_blend_thresh",
+            "display_name" : "Determines how to blend material layers",
+		    "scalar" : 0.0
+        },
+         {
+            "name" : "paint_color",
+            "display_name" : "Paint color value",
+            "vector" : [0.75, 0.0, 0.0]
+        }
+	],
+	"camera" :
+	{
+		"id" : "Camera_001-camera",
+		"name" : "Camera.002",
+		"xfov" : 50,
+		"yfov" : 35,
+		"znear" : 0.1,
+		"zfar" : 10000.0,
+		"aspect_ratio" : 1.777778,
+		"up_axis" : "Y_UP",
+		"target_position" : [1.18353,1.09353,1.83291],
+		"dir2cam" : [1.65621,1.01065,2.22736]
+	},
+    "lights" :
+	[
+		{
+			"id" : "Point-light",
+			"name" : "Point",
+			"type" : "point",
+			"position" : [-7.5, 1.0, 0]
+		},
+		{
+			"id" : "Point-light",
+			"name" : "Point",
+			"type" : "point",
+			"position" : [7.5, 1.0, 0]
+		},
+		{
+			"id" : "Point-light",
+			"name" : "Point",
+			"type" : "point",
+			"position" : [0, 1.0, -7.5]
+		},
+		{
+			"id" : "Point-light",
+			"name" : "Point",
+			"type" : "point",
+			"position" : [0, 1.0, 7.5]
+		},
+		{
+			"id" : "Directional-light",
+			"name" : "Directional",
+			"type" : "directional",
+			"direction" : [-1, -1, -1]
+		}
+	]
+	,
+    "meshes" :
+	[
+		{
+			"filename" : "mesh/sportscar_exteriors.obj",
+			"diffuse_filename" : "image/sportscar_diffuse_rusty.png",
+            "alpha_filename" : "image/layer_blend.png",
+			"texcoord_v_flip" : "true",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag"
+		},
+		{
+			"filename" : "mesh/logo.obj",
+			"diffuse_filename" : "image/logo.png",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag"
+		},
+		{
+			"filename" : "mesh/sportscar_glass.obj",
+			"environment_filename" : "image/streetscene.png",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag"
+		},
+		{
+			"material_filename" : "mesh/sportscar_interiors.mtl",
+			"filename" : "mesh/sportscar_interiors.obj",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag"
+		},
+		{
+			"filename" : "mesh/ground.obj",
+            "diffuse_filename" : "image/checker2.png",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag"
+		},
+		{
+			"material_filename" : "mesh/spheres.mtl",
+			"filename" : "mesh/spheres.obj",
+			"vertex_shader_filename" : "../shader.vert",
+			"fragment_shader_filename" : "../shader.frag"
+		}
+	]
+}
