@@ -111,18 +111,16 @@ Mesh::Mesh(Collada::PolymeshInfo &polyMesh, const Matrix4x4 &transform, const st
 			diffuse_colorData.push_back(this->diffuse_colors[i]);
   			normalData.push_back(this->normals[polyMesh.polygons[i].normal_indices[j]]);
 		}
-		if(this->texture_coordinates.size() > 0) {
-			if(polyMesh.polygons[i].texcoord_indices.size() > 0) {
-				for(int j = 0; j < 3; ++j) {
-					texcoordData.push_back(this->texture_coordinates[polyMesh.polygons[i].texcoord_indices[j]]);
-				}
-			} else {
-				for(int j = 0; j < 3; ++j) {
-					Vector2Df v;
-					v.x = 0;
-					v.y = 0;
-					texcoordData.push_back(v);
-				}
+		if(this->texture_coordinates.size() > 0 || polyMesh.polygons[i].texcoord_indices.size() > 0) {
+			for(int j = 0; j < 3; ++j) {
+				texcoordData.push_back(this->texture_coordinates[polyMesh.polygons[i].texcoord_indices[j]]);
+			}
+		} else {
+			for(int j = 0; j < 3; ++j) {
+				Vector2Df v;
+				v.x = 0;
+				v.y = 0;
+				texcoordData.push_back(v);
 			}
 		}
 	}
