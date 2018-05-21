@@ -112,8 +112,17 @@ Mesh::Mesh(Collada::PolymeshInfo &polyMesh, const Matrix4x4 &transform, const st
   			normalData.push_back(this->normals[polyMesh.polygons[i].normal_indices[j]]);
 		}
 		if(this->texture_coordinates.size() > 0) {
-			for(int j = 0; j < 3; ++j) {
-				texcoordData.push_back(this->texture_coordinates[polyMesh.polygons[i].texcoord_indices[j]]);
+			if(polyMesh.polygons[i].texcoord_indices.size() > 0) {
+				for(int j = 0; j < 3; ++j) {
+					texcoordData.push_back(this->texture_coordinates[polyMesh.polygons[i].texcoord_indices[j]]);
+				}
+			} else {
+				for(int j = 0; j < 3; ++j) {
+					Vector2Df v;
+					v.x = 0;
+					v.y = 0;
+					texcoordData.push_back(v);
+				}
 			}
 		}
 	}
@@ -145,7 +154,7 @@ Mesh::Mesh(Collada::PolymeshInfo &polyMesh, const Matrix4x4 &transform, const st
 		deltaUV2.x = uv2.x - uv0.x;
 		deltaUV2.y = uv2.y - uv0.y;
 
-		float r = 1.0f / (deltaUV1.x * deltaUV2.y - deltaUV1.y * deltaUV2.x);
+		float r = 1.0f / max(deltaUV1.x * deltaUV2.y - deltaUV1.y * deltaUV2.x, float(1e-12));
 
 		Vector3Df tangent;
 		tangent.x = (deltaPos1.x * deltaUV2.y - deltaPos2.x * deltaUV1.y)*r;

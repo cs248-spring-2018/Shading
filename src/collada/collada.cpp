@@ -1482,9 +1482,16 @@ bool ColladaParser::parse_objmesh(ifstream &in, PolymeshInfo& polymesh) {
   
   in.clear();
   in.seekg(0);
-  
+
+  int vcnt = 0;
+  int vncnt = 0;
+  int vtcnt = 0;
   while(getline(in, line)) {
-    if(line[0] == 'f' && line[1] == ' ') {
+    if(line[0] == 'v') {
+      if(line[1] == ' ') ++vcnt;
+      else if(line[1] == 'n') ++vncnt;
+      else if(line[1] == 't') ++ vtcnt;
+    } else if(line[0] == 'f' && line[1] == ' ') {
       int vertex_index = 0;
       int normal_index = 0;
       int texture_coordinate_index = 0;
@@ -1493,12 +1500,17 @@ bool ColladaParser::parse_objmesh(ifstream &in, PolymeshInfo& polymesh) {
 	  const char *cp = &line[2];
       while(*cp == ' ') cp++;
       while(sscanf(cp, "%d//%d", &vertex_index, &normal_index) == 2) {
-        poly.vertex_indices.push_back(vertex_index - 1);
+		if(vertex_index < 0) vertex_index += vcnt + 1;
+		if(normal_index < 0) normal_index += vncnt + 1;
+		poly.vertex_indices.push_back(vertex_index - 1);
 		poly.normal_indices.push_back(normal_index - 1);
         while(*cp && *cp != ' ') cp++;
         while(*cp == ' ') cp++;
       }
       while(sscanf(cp, "%d/%d/%d", &vertex_index, &texture_coordinate_index, &normal_index) == 3) {
+		if(vertex_index < 0) vertex_index += vcnt + 1;
+		if(texture_coordinate_index < 0) texture_coordinate_index += vtcnt + 1;
+		if(normal_index < 0) normal_index += vncnt + 1;
         poly.vertex_indices.push_back(vertex_index - 1);
         poly.texcoord_indices.push_back(texture_coordinate_index - 1);
         poly.normal_indices.push_back(normal_index - 1);
@@ -1506,12 +1518,15 @@ bool ColladaParser::parse_objmesh(ifstream &in, PolymeshInfo& polymesh) {
         while(*cp == ' ') cp++;
       }
       while(sscanf(cp, "%d/%d", &vertex_index, &texture_coordinate_index) == 2) {
+		if(vertex_index < 0) vertex_index += vcnt + 1;
+		if(texture_coordinate_index < 0) texture_coordinate_index += vtcnt + 1;
         poly.vertex_indices.push_back(vertex_index - 1);
         poly.texcoord_indices.push_back(texture_coordinate_index - 1);
         while(*cp && *cp != ' ') cp++;
         while(*cp == ' ') cp++;
       }
       while(sscanf(cp, "%d/", &vertex_index) == 1) {
+		if(vertex_index < 0) vertex_index += vcnt + 1;
         poly.vertex_indices.push_back(vertex_index - 1);
         while(*cp && *cp != ' ') cp++;
         while(*cp == ' ') cp++;
