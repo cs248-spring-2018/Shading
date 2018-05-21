@@ -76,12 +76,35 @@ Mesh::Mesh(Collada::PolymeshInfo &polyMesh, const Matrix4x4 &transform, const st
 		diffuse_colors.push_back(v);
 	}
 
+	bool compute_normals = (this->normals.size() == 0);
+	if(compute_normals) {
+		this->normals.resize(vertices.size());
+		for(int i = 0; i < this->normals.size(); ++i) {
+			this->normals[i].x = 0;
+			this->normals[i].y = 0;
+			this->normals[i].z = 0;
+		}
+	}
 	vertexData.reserve(polygons.size() * 3);
 	diffuse_colorData.reserve(polygons.size() * 3);
 	normalData.reserve(polygons.size() * 3);
 	texcoordData.reserve(polygons.size() * 3);
 	tangentData.reserve(polygons.size() * 3);
 
+	if(compute_normals) {
+		for(int i = 0; i < polygons.size(); ++i) {
+			const Vector3D &v0 = polyMesh.vertices[polyMesh.polygons[i].vertex_indices[0]];
+			const Vector3D &v1 = polyMesh.vertices[polyMesh.polygons[i].vertex_indices[1]];
+			const Vector3D &v2 = polyMesh.vertices[polyMesh.polygons[i].vertex_indices[2]];
+			Vector3D normal = cross(v1 - v0, v2 - v0);
+			normal.normalize();
+			for(int j = 0; j < 3; ++j) {
+				this->normals[polyMesh.polygons[i].vertex_indices[j]].x += normal.x;
+				this->normals[polyMesh.polygons[i].vertex_indices[j]].y += normal.y;
+				this->normals[polyMesh.polygons[i].vertex_indices[j]].z += normal.z;
+			}
+		}
+	}
 	for(int i = 0; i < polygons.size(); ++i) {
 		for(int j = 0; j < 3; ++j) {
   			vertexData.push_back(this->vertices[polyMesh.polygons[i].vertex_indices[j]]);
