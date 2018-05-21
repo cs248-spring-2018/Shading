@@ -1531,7 +1531,8 @@ bool ColladaParser::parse_objmesh(ifstream &in, PolymeshInfo& polymesh) {
         while(*cp && *cp != ' ') cp++;
         while(*cp == ' ') cp++;
       }
-	  if(*cp) return false;
+      
+	  //if(*cp) return false;
       int size = polymesh.polygons[polymesh.polygons.size() - 1].vertex_indices.size();
 	  if(size != 3) stat("Non triangle detected");
     }
